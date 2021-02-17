@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TBC_36_PageControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2ff-2Z-W4r">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="822"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="50" minimumInteritemSpacing="0.0" id="jhg-rq-CT2">
+                                    <size key="itemSize" width="414" height="824"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PageCell" translatesAutoresizingMaskIntoConstraints="NO" id="hDi-TX-cGH" customClass="PageCell" customModule="TBC_36_PageControl" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-1" width="414" height="824"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zHv-TL-dUr">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="824"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="rn3-tO-bVd">
+                                                    <rect key="frame" x="0.0" y="100" width="414" height="206"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="tD9-OJ-6Qa">
+                                                    <rect key="frame" x="0.0" y="376" width="414" height="96"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xh-jT-qnq">
+                                                            <rect key="frame" x="177.5" y="0.0" width="59" height="28"/>
+                                                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="24"/>
+                                                            <color key="textColor" red="0.10980392156862745" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dI-IB-dFB">
+                                                            <rect key="frame" x="188.5" y="68" width="37" height="28"/>
+                                                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                                                            <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="0xh-jT-qnq" firstAttribute="centerX" secondItem="tD9-OJ-6Qa" secondAttribute="centerX" id="olL-6H-44O"/>
+                                                        <constraint firstItem="5dI-IB-dFB" firstAttribute="centerX" secondItem="tD9-OJ-6Qa" secondAttribute="centerX" id="qTS-fE-1IP"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="rn3-tO-bVd" secondAttribute="trailing" id="EV7-5p-iTo"/>
+                                                <constraint firstItem="tD9-OJ-6Qa" firstAttribute="width" secondItem="rn3-tO-bVd" secondAttribute="width" id="KQS-Zg-JDx"/>
+                                                <constraint firstItem="rn3-tO-bVd" firstAttribute="leading" secondItem="zHv-TL-dUr" secondAttribute="leading" id="Sz7-Yu-9Mh"/>
+                                                <constraint firstItem="tD9-OJ-6Qa" firstAttribute="top" secondItem="rn3-tO-bVd" secondAttribute="bottom" constant="70" id="Xqm-I5-OCW"/>
+                                                <constraint firstItem="tD9-OJ-6Qa" firstAttribute="centerX" secondItem="zHv-TL-dUr" secondAttribute="centerX" id="kM6-ki-9jk"/>
+                                                <constraint firstItem="rn3-tO-bVd" firstAttribute="height" secondItem="zHv-TL-dUr" secondAttribute="height" multiplier="0.25" id="ndX-Op-EY7"/>
+                                                <constraint firstItem="rn3-tO-bVd" firstAttribute="top" secondItem="zHv-TL-dUr" secondAttribute="top" constant="100" id="uGV-2c-uR1"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="414" height="824"/>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="5dI-IB-dFB" id="okE-5k-X7s"/>
+                                            <outlet property="imageView" destination="rn3-tO-bVd" id="6Ea-nk-JBc"/>
+                                            <outlet property="titleLabel" destination="0xh-jT-qnq" id="skw-HR-Cg3"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="5XK-QF-7GL">
+                                <rect key="frame" x="0.0" y="822" width="414" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49h-28-0IY">
+                                        <rect key="frame" x="0.0" y="0.0" width="122" height="40"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Skip">
+                                            <color key="titleColor" red="0.10980392156862745" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onSkip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sjb-FQ-8iF"/>
+                                        </connections>
+                                    </button>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Gp6-67-2B4">
+                                        <rect key="frame" x="146" y="0.0" width="122" height="40"/>
+                                        <color key="pageIndicatorTintColor" red="0.63529411764705879" green="0.63137254901960782" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="currentPageIndicatorTintColor" red="0.31764705882352939" green="0.29019607843137252" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                                    </pageControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPH-Y3-pas">
+                                        <rect key="frame" x="292" y="0.0" width="122" height="40"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" red="0.10980392156862745" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9JM-pX-TN8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="seZ-Sb-QgT"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="5XK-QF-7GL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Qw-v4-lKC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5XK-QF-7GL" secondAttribute="bottom" id="0xb-O2-rID"/>
+                            <constraint firstItem="2ff-2Z-W4r" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Pmc-aN-dF7"/>
+                            <constraint firstItem="2ff-2Z-W4r" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WD4-Xr-Nfg"/>
+                            <constraint firstItem="5XK-QF-7GL" firstAttribute="top" secondItem="2ff-2Z-W4r" secondAttribute="bottom" id="ZYl-cP-iNE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5XK-QF-7GL" secondAttribute="trailing" id="fiB-0b-kkY"/>
+                            <constraint firstItem="2ff-2Z-W4r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xPV-j5-kdj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OEV-o3-KLm"/>
+                    <connections>
+                        <outlet property="collectionView" destination="2ff-2Z-W4r" id="Zha-d5-QvB"/>
+                        <outlet property="pageControl" destination="Gp6-67-2B4" id="UIO-wg-aRE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="109.82142857142857"/>
+        </scene>
+        <!--Result Controller-->
+        <scene sceneID="ukH-yO-MgQ">
+            <objects>
+                <viewController storyboardIdentifier="ResultController" id="SVc-w1-YsP" customClass="ResultController" customModule="TBC_36_PageControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OMG-2Q-TeX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;არ დამსქიფოოო&quot;                                                ვითომ სფეისის გოგო ვარ 🤣😂" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nv-ST-90X">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2nv-ST-90X" firstAttribute="leading" secondItem="bxa-xa-EAI" secondAttribute="leading" id="7WO-eK-VSn"/>
+                            <constraint firstItem="bxa-xa-EAI" firstAttribute="trailing" secondItem="2nv-ST-90X" secondAttribute="trailing" id="FqC-dl-6ae"/>
+                            <constraint firstItem="bxa-xa-EAI" firstAttribute="bottom" secondItem="2nv-ST-90X" secondAttribute="bottom" id="KhN-YX-KvX"/>
+                            <constraint firstItem="2nv-ST-90X" firstAttribute="top" secondItem="bxa-xa-EAI" secondAttribute="top" id="gcL-Cb-rNa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bxa-xa-EAI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ShB-VP-oUG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1797" y="121"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="326" height="251.5"/>
+    </resources>
+</document>
